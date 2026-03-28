@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                colors: {
+                  "surface-container-low": "#f6f3ee",
+                  "background": "#fcf9f4",
+                  "primary": "#18281e",
+                  "secondary": "#7c5454",
+                  "on-surface": "#1c1c19",
+                  "on-surface-variant": "#434844",
+                  "outline-variant": "#c3c8c2",
+                  "secondary-container": "#ffcaca",
+                  "tertiary-container": "#4f3429",
+                },
+                fontFamily: {
+                  "headline": ["Newsreader"],
+                  "body": ["Manrope"],
+                  "label": ["Manrope"]
+                },
+                borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+              },
+            },
+          }
+    </script>
+    <style>
+        .serif-italic { font-family: 'Newsreader'; font-style: italic; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body">
+
+<nav class="w-full top-0 sticky z-50 bg-[#fcf9f4]">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+        <a class="font-['Newsreader'] text-2xl font-light tracking-widest uppercase text-[#18281e]" href="index.html">Claire Norman</a>
+        <div class="hidden md:flex items-center gap-12">
+            <div class="flex gap-8 items-center">
+                <a class="font-['Newsreader'] italic tracking-wide text-lg text-[#1c1c19]/70 hover:text-[#18281e]" href="about.html">About</a>
+                <a class="font-['Newsreader'] italic tracking-wide text-lg text-[#18281e] border-b-2 border-[#7c5454] pb-1 font-medium" href="offerings.html">Offerings</a>
+                <a class="font-['Newsreader'] italic tracking-wide text-lg text-[#1c1c19]/70 hover:text-[#18281e]" href="#">Community</a>
+                <a class="font-['Newsreader'] italic tracking-wide text-lg text-[#1c1c19]/70 hover:text-[#18281e]" href="#">Library</a>
+                <a class="font-['Newsreader'] italic tracking-wide text-lg text-[#1c1c19]/70 hover:text-[#18281e]" href="#">Contact</a>
+            </div>
+            <a href="contact.html" class="bg-primary text-white px-6 py-2.5 rounded-lg font-label text-sm tracking-widest uppercase inline-block">Book a Session</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <header class="py-24 bg-surface-container-low border-b border-outline-variant/20">
+        <div class="max-w-7xl mx-auto px-8 text-center space-y-6">
+            <span class="text-secondary font-label uppercase tracking-widest text-sm">The Golden Path & Beyond</span>
+            <h1 class="font-headline text-5xl md:text-7xl text-primary">Sacred <span class="serif-italic">Pathways.</span></h1>
+            <p class="max-w-2xl mx-auto text-on-surface-variant text-lg font-light leading-relaxed">
+                Whether you seek individual illumination or the warmth of a collective hearth, these offerings are designed to help you unwind the tension of doing and remember the power of being.
+            </p>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-8 py-24 space-y-32">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="aspect-[4/5] bg-stone-200 rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvh3Wgja9-iMRVoiJrlRyg6KTX6kRADMm0woe8RijN4qmhFis4jDDzffIuCxn4D-G4NIH1tGdEXt1s2eHcjxA25HR0pHISBQ0Fzvo-XdCFSY8X556TLAHYbNaIH879CMXeyr9O-pEet6xkaF4kkJaOjPnixh_Vdj0bnG9BRjIuWcdpabS3RmH1npjPBaeuo3-4iOYbzoTWMKdbeVBX9x2yVGp_kUncRfkJk3S4KYG7W1_-t1ljRYneyKtGgTJ59RYjod9VQwQmMU0" class="w-full h-full object-cover" alt="Golden Path Illumination">
+            </div>
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <h2 class="font-headline text-4xl text-primary">The Golden Path <span class="serif-italic">Illumination</span></h2>
+                    <p class="text-secondary font-label uppercase tracking-widest text-xs font-bold">A 1:1 Three-Month Immersion</p>
+                </div>
+                <div class="space-y-6 text-on-surface-variant font-light leading-relaxed">
+                    <p>This is a deep dive into the architecture of your soul. Over three months, we will walk through your Hologenetic Profile, contemplating your core gifts, your lineage, and your path to prosperity.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> Six 75-minute contemplation sessions.</li>
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> Custom audio transmissions for your specific Gene Keys.</li>
+                        <li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> Personal integration practices and email support.</li>
+                    </ul>
+                </div>
+                <div class="pt-4">
+                    <a href="#" class="inline-block bg-primary text-white px-10 py-4 rounded-lg font-label tracking-widest uppercase hover:opacity-90 transition-opacity">Apply for Immersion</a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-outline-variant/30">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="lg:order-2 aspect-[4/5] bg-stone-200 rounded-xl overflow-hidden">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDNdKBcIZIvA_H64gHG7cNA_rn2kS__8972vu9Yq8f01l2SEMdJseILFlcxQXgIeyH8uEEoqx5tVI5ucwLIgi_b3HvWxA_C1IcWbcEoHDcG8T04AbZ4MNhfXUxwcavSYzzlWZAFBVUUnB7SZ52ayOULNvVpIa3BWLH-u8qsrcREpyIIMlPoHN7NzDH8EDdWNECsBWtWTJ1bnLZSi8ZpO_dW6WUjFxY9VIxmUmUqQ-FIgfO9VpvUQGNafvowQYKpFO5ER8FGeT70BI" class="w-full h-full object-cover" alt="The Collective Hearth">
+            </div>
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <h2 class="font-headline text-4xl text-primary">The Collective <span class="serif-italic">Hearth</span></h2>
+                    <p class="text-secondary font-label uppercase tracking-widest text-xs font-bold">Monthly Community Circles</p>
+                </div>
+                <p class="text-on-surface-variant font-light leading-relaxed">
+                    Wisdom is often found in the spaces between us. Join our monthly gathering to discuss the current planetary transits and how they are landing in our individual lives.
+                </p>
+                <div class="pt-4">
+                    <a href="#" class="inline-block border border-primary text-primary px-10 py-4 rounded-lg font-label tracking-widest uppercase hover:bg-surface-container-low transition-colors">Join the Circle</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<footer class="w-full py-16 bg-surface-container-low border-t border-outline-variant/15">
+    <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex flex-col items-center md:items-start gap-2">
+            <span class="font-headline italic text-xl text-secondary">Claire Norman</span>
+            <p class="font-body text-xs tracking-widest uppercase opacity-60">© 2024 Claire Norman.</p>
+        </div>
+        <div class="flex gap-10 font-body text-sm uppercase tracking-widest opacity-60">
+            <a href="#" class="hover:text-secondary">Instagram</a>
+            <a href="#" class="hover:text-secondary">Newsletter</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
